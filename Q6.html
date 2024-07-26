@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600&family=Poppins&display=swap');
+/*======================
+=========================
+===== UNIVERSAL=========
+========================= */
+        *{
+            margin: 0;
+            padding: 0 2px;
+        }
+        .flex{
+            display: flex;
+        }
+/*======================
+=========================
+===== NAVIGATION BAR=========
+========================= */        
+        .navbar{
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: #0d0f0d;
+            align-items: center;
+            box-sizing: border-box;
+            height: 50px;
+        }
+        img{
+            height: 60px;
+        }
+        .nav-items{
+            color: #f0f8ff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .navbar button{
+            height: 30px;
+            width: 120px;
+            margin-right: 10px;
+            background-color: #3077d4;
+            color: #ffffff;
+            border: 0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .fa-solid{
+            display: none;
+        }
+
+        @media screen and (max-width: 784px){
+            .navbar{
+                height: 80px;
+            }
+            img{
+                height: 80px;
+            }
+            .nav-options{
+                display: none;
+            }
+            .navbar button{
+                display: none;
+            }
+            .fa-solid{
+                display: block;
+                margin-right: 10px;
+                 font-size: 50px;
+            }
+          
+        }
+/*======================
+=========================
+===== MAIN CONTENT=========
+========================= */          
+        .main-container{
+            flex-direction: row;
+            justify-content: space-between;
+        } 
+        .main-items-1{
+            width: 540px;
+            height: 460px;
+            display: flex;
+            flex-direction: column;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-family:  'Manrope', sans-seri;
+            margin-left: 40px;
+        }
+        .main-items-1 h1,p,h6,img{
+            padding-bottom: 10px;
+        }
+        .main-items span{
+            margin-top: 50px;
+            font-size: 28px;
+            font-weight: 800;
+        }
+        .main-items-1 h1{
+            font-size: 58px;
+            color: #007bff;
+           
+        }
+        .main-items-1 h6{
+            font-size: 18px;
+            color: #007bff;
+        }
+        .main-items-1 img{
+            width: 400px;
+            height: 120px;
+            margin-bottom: 30px;
+        }
+        .main-items-1 p{
+            font-size: 16px;
+            width: auto;
+        }
+        .main-items-2 video{
+            max-width:90%;
+            height:500px;
+        }
+
+        @media screen and (max-width: 784px){
+            .main-container{
+                flex-wrap: wrap;
+            }
+        }
+/*========================
+==========================
+===INFORMATION SECTION====
+==========================
+========================= */    
+        .informations{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0;
+            width: 100%;
+            height: 350px;
+            background-color:#000 ;
+        }        
+        .info-head{
+            color: #3f018f;
+            font-size: 40px;
+            font-family: poppins;
+            margin-bottom: 30px;
+        }
+        .info-list{
+            color: #fff;
+            font-family: poppins;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width: 784px){
+          .informations{
+            background-color: #fff;
+          }
+          .info-list{
+            color: #2c2a2a;
+          }
+        }
+/*========================
+==========================
+===   ----FOOTER----  ====
+==========================
+========================= */ 
+    .footer-container{
+        margin-top: 250px;
+    }
+    footer{
+        display: flex;
+        background: #000000;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }   
+    .footer-items{
+        margin: 60px 10px 20px 10px;
+    }
+    .footer-items h1{
+        color: #f0f2f4;
+    }
+    .footer-items p{
+        margin-top: 18px;
+        color: #5f5a5a; 
+        font-size: 16px;
+        font-family: poppins;
+       
+    }
+    .footer-items input{
+        border: 0;
+        font-size: 15px;
+        padding: 5px;
+        color: #2c2626;
+        background-color: #ffffff;
+        width: 300px;
+        height: 30px;
+        border-radius: 5px;
+        font-family: poppins;
+        margin-top: 18px;
+    }
+    .footer-items button{
+            margin-top: 4px;
+            background-color: #3077d4;
+            color: #ffffff;
+            border: 0;
+            border-radius: 5px;
+            font-weight: lighter;
+            font-size: 16px;
+            font-family: poppins;
+            width: 312px;
+            height: 40px;
+            padding: 5px;
+    }
+    @media screen and (max-width: 784px){
+          footer{
+            flex-direction: column;
+          }
+          .footer-items{
+            margin-left: 40px;
+          }
+          .footer-items p{
+            font-size: 20px;
+          }
+        }
+    </style>
+</head>
+<body>
+<!---------- Navigation Bar---------- -->
+    <div class="navbar-container">
+        <nav class="navbar flex">
+
+            <img src="https://cas-img.sgp1.digitaloceanspaces.com/wp-content/uploads/2020/04/14035339/Logo.com-logo.png" alt="">
+
+            <div class="nav-options"> 
+               <a href="" class="nav-items">Home</a>
+               <a href="" class="nav-items">Blog</a>
+               <a href="" class="nav-items">About</a>
+               <a href="" class="nav-items">Contact</a>
+            </div>
+            <button type="button">Login</button>
+            <i class="fa-solid fa-bars fa-xl" style="color: #f0f2f4;"></i>
+    </div>
+<!---------- Main Content---------- -->  
+    <div class="main-container flex">
+        <div class="main-items main-items-1 flex">
+            <span>Say Hi to</span>
+            <h1>One Card</h1>
+            <H6>Co-branded Card Issuers :</H6>
+            <img src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png" alt="">
+            <P>India's best metal credit card. Built with full-stack tech. Backed by the 
+                principles of simplicity, transparency, and giving back control to the user.</P>
+        </div>
+        <div class="main-items main-items-2">
+            <video src="https://www.getonecard.app/images/say_hi_2x_d3_.mp4" autoplay="autoplay" muted="muted" loop="loop"></video>
+        </div>
+    </div>       
+<!---------- Information Section---------- -->  
+    <section class="informations flex">
+        <h1 class="info-head">No Hidden Fees Ever</h1>
+            <span class="info-list">No Joining Fees.</span>
+            <span class="info-list">No Annual Fees.</span>
+            <span class="info-list">No Reawrds Redemption Fees.</span>
+    </section>
+<!---------- FOOTER ---------- -->  
+    <Div class="footer-container">
+      <footer>
+        <div class="footer-items">
+            <h1>One Card</h1>
+            <p>India's best metal credit card. Built with full <br>
+                -stack tech. Backed by the 
+                principles of <br>
+                simplicity, transparency, and giving back <br> 
+                control to the user.</p>
+        </div>
+        <div class="footer-items">
+            <h1>Navigatons</h1>
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Carrers</p>
+            <p>Offers</p>
+        </div>
+
+        <div class="footer-items">
+            <h1>Support</h1>
+            <p>F.A.Q</p>
+            <p>Cookies Policy</p>
+            <p>Terms Of Services</p>
+            <p>Support</p>
+        </div>
+
+        <div class="footer-items">
+            <h1>Newsletter</h1>
+            <input type="email" name="" id="" placeholder="Your Email id here" >
+            <br>
+            <button >Subscribe</button>
+        </div>
+        </footer>
+</body>
+</html>
